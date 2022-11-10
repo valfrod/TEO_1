@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NepenteAnim : MonoBehaviour
+public class Shoot_Medusa : MonoBehaviour
 {
     public Transform player;
     public Transform shootPos;

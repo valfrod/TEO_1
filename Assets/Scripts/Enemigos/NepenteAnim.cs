@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shoot_Medusa : MonoBehaviour
+public class NepenteAnim : MonoBehaviour
 {
     public Transform player;
     public float range;
@@ -22,7 +22,7 @@ public class Shoot_Medusa : MonoBehaviour
         distToPlayer = Vector3.Distance(transform.position, player.position);
         if(distToPlayer<=range)
         {
-          //  animator.enabled;
+            animator.enabled=true;
         }
     }
 }
