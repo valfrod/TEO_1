@@ -8,15 +8,10 @@ public class MovePlatforms : MonoBehaviour
     public float moveSpeed;
     public int target;
 
-    // Update is called once per frame
-    void Update()
-    {
-        transform.position = Vector3.MoveTowards(transform.position, waypoints[target].position, moveSpeed * Time.deltaTime);
-        
-    }
 
     private void FixedUpdate()
     {
+        transform.position = Vector3.MoveTowards(transform.position, waypoints[target].position, moveSpeed * Time.deltaTime);
         Move();        
     }
 
@@ -33,5 +28,15 @@ public class MovePlatforms : MonoBehaviour
                 target += 1;
             }
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        other.transform.SetParent(transform);
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        other.transform.SetParent(null);
     }
 }

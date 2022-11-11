@@ -32,9 +32,7 @@ public class PController : MonoBehaviour
         DoubleJump,
         Caida,
         Landing,
-        WaterStreamIn,
-        WaterStreamLoop,
-        WaterStreamOut
+        WaterStream
     };
     TeoStates state;
 
@@ -74,22 +72,15 @@ public class PController : MonoBehaviour
             case TeoStates.DoubleJump:
                 DoubleJump();
                 break;
-            case TeoStates.WaterStreamIn:
-                WaterStreamIn();
-                break;
-            case TeoStates.WaterStreamOut:
-                WaterStreamOut();
+            case TeoStates.WaterStream:
+                WaterStream();
                 break;
         }
         //if (waterBomb.enabled == true)
         //{
             if (Input.GetKeyDown(KeyCode.J))
             {
-                ChangeState(TeoStates.WaterStreamIn);
-            }
-            if (Input.GetKeyUp(KeyCode.J))
-            {
-                ChangeState(TeoStates.WaterStreamOut);
+                ChangeState(TeoStates.WaterStream);
             }
         //}
 
@@ -141,11 +132,9 @@ public class PController : MonoBehaviour
             case TeoStates.Landing:
                 animator.SetBool("isGrounded", true);
                 break;
-            case TeoStates.WaterStreamIn:
-                animator.SetBool("waterBomb",true);
-                break;
-            case TeoStates.WaterStreamOut:
-                animator.SetBool("waterBomb", false);
+            case TeoStates.WaterStream:
+                //animator.ResetTrigger("waterBomb");
+                animator.SetTrigger("waterBomb");
                 break;
         }
         state = newState;
@@ -270,13 +259,9 @@ public class PController : MonoBehaviour
         ChangeState(TeoStates.Caida);
     }
 
-    void WaterStreamIn()
+    void WaterStream()
     {
 
     }
 
-    void WaterStreamOut()
-    {
-
-    }
 }

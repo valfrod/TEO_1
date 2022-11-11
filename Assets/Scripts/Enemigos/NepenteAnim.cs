@@ -23,6 +23,9 @@ public class NepenteAnim : MonoBehaviour
         if(distToPlayer<=range)
         {
             animator.enabled=true;
+        } else
+        {
+            animator.enabled = false;
         }
     }
 }
