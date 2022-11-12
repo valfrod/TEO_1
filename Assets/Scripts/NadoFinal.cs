@@ -6,7 +6,7 @@ public class NadoFinal : MonoBehaviour
 {
     public GameObject player;
     public Vector2 jumpCoordinates;
-    public float maxHeight = 5f;
+    public float maxHeight = 2f;
     public float maxDistance = 10f;
 
     // Start is called before the first frame update
