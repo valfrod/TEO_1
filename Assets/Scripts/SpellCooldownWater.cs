@@ -4,28 +4,28 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class SpellCooldown : MonoBehaviour
+public class SpellCooldownWater : MonoBehaviour
 {
     public Image imageCooldown;
     private bool isCooldown = false;
 
     //Variables for coolDownTimer
-    private float cooldownTime = 30.0f;
+    private float cooldownTime = 1.0f;
     private float cooldownTimer = 0.0f;
     // Start is called before the first frame update
     void Start()
     {
-        imageCooldown.fillAmount = 0.0f;  
+        imageCooldown.fillAmount = 0.0f;
     }
 
     // Update is called once per frame
     void Update()
     {
-       if(Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.J))
         {
             UseSpell();
         }
-       if (isCooldown)
+        if (isCooldown)
         {
             ApplyCooldown();
         }
@@ -35,7 +35,7 @@ public class SpellCooldown : MonoBehaviour
     {
         cooldownTimer -= Time.deltaTime;
 
-        if(cooldownTimer < 0.0f)
+        if (cooldownTimer < 0.0f)
         {
             isCooldown = false;
             imageCooldown.fillAmount = 0.0f;
