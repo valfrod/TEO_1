@@ -6,7 +6,27 @@ ModelImporter:
   - first:
       74: 1827226128182048838
     second: Take 001
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Teo_RIG_V03_Teo_Body
+    second: {fileID: 2100000, guid: 8f1440e01df55184ba4f7490a777014d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Teo_RIG_V03_Teo_Hood
+    second: {fileID: 2100000, guid: ac3dc696fd2aaaf4e994381187768394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Teo_RIG_V03_Teo_UVS_F_Teo_Grills_Fins
+    second: {fileID: 2100000, guid: aba17307da6d2c6499388a693569f5d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Teo_RIG_V03_Teo_book
+    second: {fileID: 2100000, guid: 6d7837ec2771e9d4e877f2a03b02fde2, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

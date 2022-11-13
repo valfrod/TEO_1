@@ -20,6 +20,7 @@ public class PController : MonoBehaviour
     
 
     private Vector3 direction;
+    private Vector3 p;
     Animator animator;
     private bool moveDetected;
     private Gun waterBomb;
@@ -83,6 +84,7 @@ public class PController : MonoBehaviour
                 ChangeState(TeoStates.WaterStream);
             }
         //}
+      
 
     }
     private void CheckRoof()
@@ -179,6 +181,7 @@ public class PController : MonoBehaviour
             {
                 ChangeState(TeoStates.Idle);
             }
+            
 
             //Flip
             if (hInput != 0)
