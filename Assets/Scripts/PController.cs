@@ -86,9 +86,9 @@ public class PController : MonoBehaviour
                 ChangeState(TeoStates.WaterStream);
             }
         //}
-      
-
     }
+   
+
     private void CheckRoof()
     {
         RaycastHit hitInfo = new RaycastHit();
@@ -101,7 +101,6 @@ public class PController : MonoBehaviour
         {
             gravity = -16f;
         }
-        
     }
 
     IEnumerator PausaRes()

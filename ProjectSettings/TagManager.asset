@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Floor
   - PlatMove
+  - WaterBomb
+  - Medusa
   layers:
   - Default
   - TransparentFX
@@ -14,12 +16,12 @@ TagManager:
   - Water
   - UI
   - ground
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - placa 1
+  - placa 2
+  - placa 3
+  - placa 4
+  - placa 5
+  - placa 6
   - 
   - 
   - 
