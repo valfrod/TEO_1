@@ -24,12 +24,14 @@ public class TeoPJ : MonoBehaviour
         if (TeoState.vidas == 0)
         {
             this.transform.position = TeoState.hposition;
+            Physics.SyncTransforms();
             TeoState.vidas = 4;
             //respawn = true;
         }
         else if (TeoState.resp == 1)
         {
             this.transform.position = TeoState.position;
+            Physics.SyncTransforms();
             TeoState.resp = 0;
         }
 
