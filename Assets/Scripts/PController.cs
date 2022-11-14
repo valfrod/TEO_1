@@ -13,10 +13,12 @@ public class PController : MonoBehaviour
     public bool moving;
     public bool hability;
     public bool isGrounded;
+    public float rayCastRoof;
     public bool ableToMakeDoubleJump;
     public Transform model;
     public Transform groundCheck;
     public LayerMask groundLayer;
+    public LayerMask techoCheck;
     
 
     private Vector3 direction;
@@ -90,11 +92,16 @@ public class PController : MonoBehaviour
     private void CheckRoof()
     {
         RaycastHit hitInfo = new RaycastHit();
-        Debug.DrawRay(transform.position, Vector3.up * 0.8f, Color.red);
-        if (Physics.Raycast(transform.position, Vector3.up, out hitInfo, 0.8f, groundLayer))
+        Debug.DrawRay(transform.position, Vector3.up * rayCastRoof, Color.red);
+        if (Physics.Raycast(transform.position, Vector3.up, out hitInfo, rayCastRoof, techoCheck))
         {
             gravity = -350f;
         }
+        else
+        {
+            gravity = -16f;
+        }
+        
     }
 
     IEnumerator PausaRes()
@@ -213,7 +220,7 @@ public class PController : MonoBehaviour
         //Jump
         if (hability == false)
         {
-            CheckRoof();
+            //CheckRoof();
             isGrounded = Physics.CheckSphere(groundCheck.position, 0.15f, groundLayer);
             direction.y += gravity * Time.deltaTime;
             if (isGrounded)

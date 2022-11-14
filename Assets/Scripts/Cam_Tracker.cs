@@ -17,7 +17,7 @@ public class Cam_Tracker : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         Vector3 targetCamPos = target.position + offset;
 
