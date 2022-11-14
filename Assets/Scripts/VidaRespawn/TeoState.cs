@@ -14,7 +14,7 @@ public static class TeoState
     static float yD = 1.5f;
     static float zD = 0f;
     public static Vector3 position = new Vector3(xD, yD, zD);
-    public static Vector3 hposition = new Vector3(0, 0, 0);
+    public static Vector3 hposition = new Vector3(-52.5f, 0.17f, 0);
 
     public static void SavePrefs()
     {

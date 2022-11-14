@@ -5,22 +5,20 @@ using TMPro;
 
 public class TeoPJ : MonoBehaviour
 {
-    public int Displayvidas = TeoState.vidas;
-    public TextMeshProUGUI DVidas;
+    
     int type = 1;
     bool regenerar = true;
 
     // Start is called before the first frame update
     void Start()
     {
-        this.transform.position = TeoState.position;
+        //this.transform.position = TeoState.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Displayvidas = TeoState.vidas;
-        DVidas.text = Displayvidas.ToString();
+        
         if (TeoState.vidas == 0)
         {
             this.transform.position = TeoState.hposition;
