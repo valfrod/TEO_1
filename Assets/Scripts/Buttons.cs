@@ -14,7 +14,7 @@ public class Buttons : MonoBehaviour
 
     public void StartClick()
     {
-        SceneManager.LoadScene("Nivel_X 1");
+        SceneManager.LoadScene("Nivel");
         
     }
 
