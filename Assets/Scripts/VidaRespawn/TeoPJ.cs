@@ -16,15 +16,15 @@ public class TeoPJ : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
         if (TeoState.vidas == 0)
         {
             this.transform.position = TeoState.hposition;
             Physics.SyncTransforms();
             TeoState.vidas = 4;
             //respawn = true;
+            Debug.Log("Respawn.0");
         }
         else if (TeoState.resp == 1)
         {

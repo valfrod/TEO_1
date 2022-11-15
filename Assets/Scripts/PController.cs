@@ -79,13 +79,13 @@ public class PController : MonoBehaviour
                 WaterStream();
                 break;
         }
-        //if (waterBomb.enabled == true)
-        //{
+        if (waterBomb.enabled == true)
+        {
             if (Input.GetKeyDown(KeyCode.J))
             {
                 ChangeState(TeoStates.WaterStream);
             }
-        //}
+        }
     }
    
 
@@ -210,7 +210,6 @@ public class PController : MonoBehaviour
             }
 
             controller.Move(direction * Time.deltaTime);
-            
         }
     }
 
