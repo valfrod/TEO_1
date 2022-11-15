@@ -23,7 +23,6 @@ public class TeoPJ : MonoBehaviour
             this.transform.position = TeoState.hposition;
             Physics.SyncTransforms();
             TeoState.vidas = 4;
-            //respawn = true;
             Debug.Log("Respawn.0");
         }
         else if (TeoState.resp == 1)

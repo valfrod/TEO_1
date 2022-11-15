@@ -18,8 +18,6 @@ public class Checkpoint : MonoBehaviour
                 TeoState.hposition = this.transform.position;
                 TeoState.SavePrefs();
                 print("Ultimo checkpoint" + TeoState.hposition);
-                //Material material = gameObject.GetComponent<MeshRenderer>().material;
-               // material.color = Color.green;
                 print(PosI + "seg" + PosN);
             }
             else
@@ -27,8 +25,6 @@ public class Checkpoint : MonoBehaviour
                 TeoState.position = this.transform.position;
                 TeoState.SavePrefs();
                 print("Ultimo checkpoint_nohcheck" + TeoState.position);
-               // Material material = gameObject.GetComponent<MeshRenderer>().material;
-               // material.color = Color.green;
                 print(PosI + "seg" + PosN);
             }
         }
