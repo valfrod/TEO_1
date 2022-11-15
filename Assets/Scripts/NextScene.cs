@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class NextScene1 : MonoBehaviour
+public class NextScene : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {

@@ -4,13 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class NextScene : MonoBehaviour
+public class NextScene1 : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Nivel_X_Boss");
+            SceneManager.LoadScene("Boss");
         }
     }
 }
