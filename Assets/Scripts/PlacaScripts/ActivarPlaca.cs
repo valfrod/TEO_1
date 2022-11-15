@@ -10,6 +10,8 @@ public class ActivarPlaca : MonoBehaviour
     public GameObject Escudo;
     public bool move;
     public bool check;
+    public bool puzzz1;
+    public float raycastdist;
     bool activo;
 
     // Start is called before the first frame update
@@ -30,7 +32,7 @@ public class ActivarPlaca : MonoBehaviour
         {
             rigido.isKinematic = true;
         }
-        if (Physics.Raycast(transform.position, Vector3.down, 10, maskPlaca) && activo)
+        if (Physics.Raycast(transform.position, Vector3.down, raycastdist, maskPlaca) && activo)
         {
             check = true;
             activo = false;
@@ -41,7 +43,14 @@ public class ActivarPlaca : MonoBehaviour
     IEnumerator placon()
     {
         yield return new WaitForSeconds(1);
-        plataforma.contpuzz += 1;
+        if(puzzz1)
+        {
+            plataforma.contpuzz += 1;
+        }
+        else
+        {
+            plataforma2.contpuzz += 1;
+        }
         rigido.isKinematic = true;
     }
 }
