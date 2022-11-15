@@ -6,10 +6,10 @@ public class Gun : MonoBehaviour
 {
     [SerializeField] private GameObject projectile;
     [SerializeField] private Transform firepoint;
-    //[SerializeField] private float chargeTime;
+    /*[SerializeField] private float chargeTime;
     [SerializeField] private float chargeSpeed;
     private bool isCharging;    
-    /*[SerializeField] private GameObject chargedProjectile;
+    [SerializeField] private GameObject chargedProjectile;
     [SerializeField] private float sizeGrow;
     public float scaleChange = 0.01f;
     [SerializeField] private GameObject growth; */
