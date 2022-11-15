@@ -388,18 +388,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d686745e9cf62c4e8777613e45d7370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    name: '[Nombre]'
-    sentences:
-    - '[Dialogo]'
   nameText: {fileID: 4131068016892717966}
   narrativeText: {fileID: 4131068017277898817}
   narrativeBubble: {fileID: 4131068016795469849}
+  idleDialogue:
+    name: 
+    sentences: []
+  unlocksQuest: 0
+  questDialogue:
+    name: 
+    sentences: []
+  reward: 
   interactTutorial: {fileID: 1786358946582834146}
   interactKey: 102
   dialogueStarted: 0
   playerInRangeOfDialogue: 0
-  powerObtained: 0
 --- !u!95 &4131068017491871025
 Animator:
   serializedVersion: 4
