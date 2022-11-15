@@ -9,6 +9,8 @@ TagManager:
   - WaterBomb
   - Medusa
   - hcheck
+  - Stoper
+  - etca
   layers:
   - Default
   - TransparentFX
