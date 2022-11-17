@@ -6,15 +6,15 @@ using UnityEngine.SceneManagement;
 public class Buttons : MonoBehaviour
 {
 
-    private void Start()
-    {
-        Cursor.lockState = CursorLockMode.None;
+ private void Start()
+   {
+       Cursor.lockState = CursorLockMode.None;
        
     }
 
     public void StartClick()
     {
-        SceneManager.LoadScene("Nivel");
+        SceneManager.LoadScene("VideoIntro");
         
     }
 
